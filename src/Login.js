@@ -13,7 +13,7 @@ export default function SignIn() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div>
-        <form noValidate>
+        <form method="POST" action="/login">
           <TextField
             variant="outlined"
             margin="normal"
@@ -56,6 +56,7 @@ export default function SignIn() {
             </Grid>
           </Grid>
         </form>
+        <a href="/auth/google">Login with Google</a>
       </div>
     </Container>
   );

@@ -8,7 +8,7 @@ export default function SignUp() {
   return (
     <Container component="main" maxWidth="xs">
       <div>
-        <form noValidate>
+        <form method="POST" action="/login/new">
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -68,6 +68,7 @@ export default function SignUp() {
             </Grid>
           </Grid>
         </form>
+       <a href="/auth/google">Login with Google</a>
       </div>
     </Container>
   );

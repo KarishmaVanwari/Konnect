@@ -12,7 +12,7 @@ passport.use(
         callbackURL: "/auth/google/redirect"
       },async (accessToken, refreshToken, profile, done) => {
 
-        const search=await User.find({googleID:profile.id})
+        const search=await User.find({email:profile.emails[0].value})
         
         if(search.length===0){
           const wow = new User({

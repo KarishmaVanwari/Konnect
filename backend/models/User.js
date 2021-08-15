@@ -12,7 +12,10 @@ const Schema=mongoose.Schema({
         requred:true
     },
     article:{
-        typr:String
+        type:String
+    },
+    password:{
+        type:String
     }
 });
 
