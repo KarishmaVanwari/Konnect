@@ -5,7 +5,7 @@ route.get('/',async(req,res)=>{
     const allObj=await User.find()
     data=[]
     allObj.map(i=>{
-        data.push({'name':i.name,'article':i.article,'id':i._id})
+        data.push({'name':i.name,'article':i.article,'id':i._id,'image':i.imageUrl})
     })
     // console.log(data);
     res.json(data)

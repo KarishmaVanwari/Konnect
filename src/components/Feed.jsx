@@ -19,18 +19,10 @@ const Feed = ()=>{
         700: 2,
         500: 1
       };
-    
-    var items = [
-        {id: 1, name: 'My First Item'},
-        {id: 2, name: 'Another item'},
-        {id: 3, name: 'Third Item'},
-        {id: 4, name: 'Here is the Fourth'},
-        {id: 5, name: 'High Five'}
-      ];
       
       // Convert array to JSX items
-      items = feed.map(function(item) {
-        return <div key={item.id}>Name:{item.name} Article:{item.article}</div>
+      let items = feed.map(function(item) {
+        return <div key={item.id}>Name:{item.name} Article:{item.article} ImageURI :{item.image}</div>
       });
 
       return(
@@ -40,6 +32,7 @@ const Feed = ()=>{
         columnClassName="my-masonry-grid_column"
       >
         {items}
+        
       </Masonry>
       );
       

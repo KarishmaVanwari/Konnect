@@ -16,6 +16,9 @@ const Schema=mongoose.Schema({
     },
     password:{
         type:String
+    },
+    imageUrl:{
+        type:String
     }
 });
 
