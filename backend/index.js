@@ -31,8 +31,10 @@ app.get('/',(req,res)=>{
 
 const auth=require('./routes/googleauth');
 const login=require('./routes/login');
+const feed=require('./routes/feed')
 app.use('/auth',auth);
 app.use('/login',login)
+app.use('/feed',feed)
 app.get('/api',(req,res)=>{
     res.json({users:['user-1','user-2','user-3']})
 })
