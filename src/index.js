@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Login from './Login'
+import AuthTabs from './AuthTabs';
 
 ReactDOM.render(
     <React.StrictMode>
-      <Login />
+      <AuthTabs />
     </React.StrictMode>,
     document.getElementById('root')
   );
