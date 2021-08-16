@@ -22,7 +22,7 @@ const Feed = ()=>{
       
       // Convert array to JSX items
       let items = feed.map(function(item) {
-        return <div key={item.id}>Name:{item.name} Article:{item.article} ImageURI :{item.image}</div>
+        return <div key={item.id}>Name:{item.name} Article:{item.article}</div>
       });
 
       return(
